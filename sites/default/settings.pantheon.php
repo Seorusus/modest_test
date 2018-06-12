@@ -28,6 +28,10 @@ if (!defined("PANTHEON_VERSION")) {
   define("PANTHEON_VERSION", "3");
 }
 
+if (file_exists(__DIR__ . '/settings.local.php')) {
+  include __DIR__ . '/settings.local.php';
+}
+
 /**
  * Determine whether this is a preproduction or production environment, and
  * then load the pantheon services.yml file.  This file should be named either
