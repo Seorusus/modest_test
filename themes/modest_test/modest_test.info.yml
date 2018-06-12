@@ -1,12 +1,13 @@
 name: modest_test
 type: theme
-core: 8.x
 base theme: classy
 package: custom
 description: Lending page for test task
 screenshot: modest_test.jpg
 Core 8.x libraries:
 - modest_test/global-styling-and-scripts
+core: 8.x
+
 
 regions:
 header: Header
