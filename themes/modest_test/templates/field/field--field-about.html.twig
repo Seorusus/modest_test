@@ -1,0 +1,9 @@
+<div id="anchor-1" class="anchor-1">
+    {% for item in items %}
+        <div{{ item.attributes.addClass('anchor-1__item') }}>
+            <div class="anchor-1__item-inner">
+                {{ item.content }}
+            </div>
+        </div>
+    {% endfor %}
+</div>
