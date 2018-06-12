@@ -1,8 +1,0 @@
-mappy.mappy:
-  version: VERSION
-  js:
-    js/mappy.js: {}
-  dependencies:
-    - core/jquery
-    - core/drupal
-    - core/drupalSettings

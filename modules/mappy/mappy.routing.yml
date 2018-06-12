@@ -1,7 +1,0 @@
-mappy.settings:
-  path: '/admin/config/content/mappy'
-  defaults:
-    _title: 'Mappy settings'
-    _form: '\Drupal\mappy\Form\MappySettingsForm'
-  requirements:
-    _permission: 'administer site configuration'
