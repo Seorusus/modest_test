@@ -4,12 +4,12 @@ base theme: classy
 package: custom
 description: Lending page for test task
 screenshot: modest_test.jpg
-Core 8.x libraries:
-- modest_test/global-styling-and-scripts
 core: 8.x
 
+libraries:
+- modest_test/global-styling-and-scripts
 
 regions:
-header: Header
-content: Content
-footer: Footer
+  header: Header
+  content: Content
+  footer: Footer
