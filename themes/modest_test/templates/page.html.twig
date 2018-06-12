@@ -1,0 +1,21 @@
+<div id="frontpage">
+    <header id="header">
+        <div class="container">
+            {{ page.header }}
+        </div>
+    </header>
+    <section id="main">
+        <div class="container">
+                <div id="content" class="test">
+                    {{ page.content }}
+                </div>
+        </div>
+    </section>
+    {% if page.footer %}
+        <footer id="footer">
+            <div class="container">
+                {{ page.footer }}
+            </div>
+        </footer>
+    {% endif %}
+</div>
