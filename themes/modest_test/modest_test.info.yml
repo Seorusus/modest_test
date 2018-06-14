@@ -9,6 +9,7 @@ core: 8.x
 libraries:
 - modest_test/global-styling-and-scripts
 
+
 regions:
   header: Header
   content: Content

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" autoUpload="Always" serverName="modest-test">
+    <serverData>
+      <paths name="aikido-dnepr">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/code" local="$PROJECT_DIR$" web="http://dev-modest-test.pantheonsite.io/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="modest-test">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/code" local="$PROJECT_DIR$" web="http://dev-modest-test.pantheonsite.io/" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+    <option name="myAutoUpload" value="ALWAYS" />
+  </component>
+</project>

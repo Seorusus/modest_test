@@ -1,9 +1,39 @@
-<div id="anchor-1" class="anchor-1">
-    {% for item in items %}
-        <div{{ item.attributes.addClass('anchor__item') }}>
-            <div class="anchor__item-inner">
-                {{ item.content }}
+<section class="wrapper wrapper-about">
+    <div id="anchor-1" class="anchor-1 container">
+        {% if label_hidden %}
+            {% if multiple %}
+                <div{{ attributes }}>
+                    {% for item in items %}
+                        <div{{ item.attributes }}>{{ item.content }}
+                        </div>
+                    {% endfor %}
+                </div>
+            {% else %}
+                {% for item in items %}
+                    <div{{ attributes }}>{{ item.content }}
+                    </div>
+                {% endfor %}
+            {% endif %}
+        {% else %}
+            <div{{ attributes }}>
+                <div class="anchor-title"{{ title_attributes }}>
+                    <h3 class="os-animation animated fadeIn" data-os-animation="fadeIn" data-os-animation-delay=".8s" style="animation-delay: 1s;">
+                        {{ label }}
+                    </h3>
+
+                </div>
+                {% if multiple %}
+                <div>
+                    {% endif %}
+                    {% for item in items %}
+                        <div class="anchor-body"{{ item.attributes }}>
+                            {{ item.content }}
+                        </div>
+                    {% endfor %}
+                    {% if multiple %}
+                </div>
+                {% endif %}
             </div>
-        </div>
-    {% endfor %}
-</div>
+        {% endif %}
+    </div>
+</section>

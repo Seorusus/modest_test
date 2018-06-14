@@ -1,0 +1,13 @@
+<?php
+
+function modest_test_preprocess_page(&$variables) {
+    $block = \Drupal\block\Entity\Block::load('block_3');
+    $variables['block_footer_left'] = \Drupal::entityTypeManager()
+    ->getViewBuilder('block')
+    ->view($block);
+
+  $block = \Drupal\block\Entity\Block::load('block_3');
+  $variables['block_footer_right'] = \Drupal::entityTypeManager()
+    ->getViewBuilder('block')
+    ->view($block);
+}

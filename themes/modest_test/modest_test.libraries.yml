@@ -2,9 +2,12 @@ global-styling-and-scripts:
   version: 1.x
   css:
     theme:
-      css/layout.css: {}
       css/style.css: {}
-      css/colors.css: {}
+      css/responsive.css: {}
+    base:
+      '//fonts.googleapis.com/css?family=Quattrocento+Sans:400,700': { external: true }
+      '//fonts.googleapis.com/css?family=Open+Sans:400,700,600': { external: true }
+      '//use.fontawesome.com/releases/v5.0.13/css/all.css': { external: true }
 
   js:
-    js/navmenu.js: {}
+    js/script.js: {}
